@@ -31,6 +31,10 @@
 **Quick Scans:**
 
 ```bash
+rustscan -a {{.IPAddress}} -- -A -sV -sC -oN rustscan-{{.Name}}.txt
+```
+
+```bash
 nmap -v -Pn -p- --min-rate=5000 -oN nmap-{{.Name}}.txt {{.IPAddress}}
 ```
 
